@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D8DBD7"
+    tools:context=".FormInput">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:paddingLeft="17mm"
+        android:paddingTop="2mm"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:text="Input Daerah"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alamat : "
+        android:textColor="#111111"
+        android:textSize="3mm"
+        android:paddingBottom="1mm"
+        android:paddingLeft="2mm"/>
+
+    <EditText
+        android:id="@+id/alamat"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="2mm"
+        android:layout_marginRight="2mm"
+        android:background="@drawable/text"
+        android:hint="Masukkan Nama Daerah"
+        android:padding="1mm"
+        android:textSize="3mm" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kota : "
+        android:textColor="#111111"
+        android:textSize="3mm"
+        android:paddingTop="1mm"
+        android:paddingBottom="1mm"
+        android:paddingLeft="2mm"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/kota"
+        android:layout_marginLeft="2mm"
+        android:layout_marginRight="2mm"
+        android:textSize="3mm"
+        android:padding="1mm"
+        android:completionThreshold="1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/text"
+        android:hint="Masukkan Nama Daerah"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Provinsi : "
+        android:textColor="#111111"
+        android:textSize="3mm"
+        android:paddingTop="1mm"
+        android:paddingBottom="1mm"
+        android:paddingLeft="2mm"/>
+
+    <Spinner
+        android:id="@+id/provinsi"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="2mm"
+        android:layout_marginRight="2mm"
+        android:background="@drawable/text"
+        android:padding="1mm"
+        android:textSize="3mm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <Button
+        android:id="@+id/tambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:textColor="#ffff"
+        android:text="TAMBAH"
+        android:textSize="25px"
+        android:layout_marginLeft="2mm"
+        android:layout_marginRight="2mm"
+        android:layout_marginTop="3mm"/>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cancel"
+        android:textColor="#141414"
+        android:text="Cancel"
+        android:textSize="25px"
+        android:layout_marginLeft="2mm"
+        android:layout_marginRight="2mm"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
